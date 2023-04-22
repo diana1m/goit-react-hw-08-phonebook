@@ -3,9 +3,9 @@ import * as yup from 'yup';
 import 'yup-phone';
 import {Form, ErrorFormik, Button, InputStyled} from './Form.styled';
 import { useDispatch } from "react-redux";
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts/operations';
 import { useSelector } from 'react-redux';
-import { getContacts } from 'redux/selectors';
+import { getContacts } from 'redux/contacts/selectors';
 
 
 const phoneRegExp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
