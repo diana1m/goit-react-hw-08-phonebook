@@ -11,6 +11,7 @@ export const Form = styled(FormikForm)`
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin: 0 auto;
 `;
 
 export const InputStyled = styled(Field)`
