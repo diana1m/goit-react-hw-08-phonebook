@@ -7,3 +7,13 @@ export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
 `
+
+// export const Layout = styled.div`
+// font-family: 'Poppins', url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+//   background-color: #AED7FC;
+//   display: flex;
+//   flex-direction: column;
+//   /* align-items: center; */
+//   margin: 0 auto;
+//   gap: 10px;
+// `;
