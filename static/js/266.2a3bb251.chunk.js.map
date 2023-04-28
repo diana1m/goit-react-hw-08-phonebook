@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/266.2a3bb251.chunk.js","mappings":"iMAAe,SAASA,IACpB,OACE,0BACE,oDAML,C","sources":["pages/Home.js"],"sourcesContent":["export default function Home() {\n    return (\n      <div >\n        <h1 >\n          PhoneBook welcome page\n\n        </h1>\n      </div>\n    );\n  }"],"names":["Home"],"sourceRoot":""}
