@@ -1,11 +1,6 @@
 import { GlobalStyle } from 'GlobalStyle';
-// import { Layout } from '../Layout/Layout.styled';
-// import { ContactsForm } from '../Form/Form';
-// import { Filter } from '../Filter/Filter';
-// import { ContactsList } from '../ContactsList/ContactsList';
-// import { Loader } from '../Loader/Loader';
 import { useDispatch } from 'react-redux';
-// import { getIsLoading, getError } from 'redux/contacts/selectors';
+import { Toaster } from 'react-hot-toast';
 import { useEffect, lazy } from 'react';
 import { SharedLayout } from 'components/SharedLayout/SharedLayout';
 import { Route, Routes } from 'react-router-dom';
@@ -56,6 +51,7 @@ export const App = () => {
       </Route>
     </Routes>
     <GlobalStyle/>
+    <Toaster position="top-center" reverseOrder={false} />
 </>
 
   );
