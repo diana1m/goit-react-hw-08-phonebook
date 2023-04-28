@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     color: #FBFCFB;
     margin-left: auto;
@@ -14,12 +15,11 @@ export const Text = styled.p`
 
 export const Button = styled.button`
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    height: 40px;
 
-    padding: 3px 15px;
+    /* padding: 3px 15px; */
 
     background-color: #AED7FC;
     border-radius: 12px;

@@ -13,7 +13,7 @@ export const UserMenu = () => {
     <Wrapper>
       <Text>Welcome, {user.name}</Text>
       <Button type="button" onClick={()=>dispatch(logOut())}>
-        <TbLogout width='10px'/>
+        <TbLogout/>
       </Button>
     </Wrapper>
   );

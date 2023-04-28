@@ -50,4 +50,10 @@ export const Button = styled.button`
     border: none;
     color: #ECECEC;
     cursor: pointer;
+    transition: background-color 200ms cubic-bezier(0.165, 0.84, 0.44, 1)  ;
+
+    &:hover,
+    &:focus{
+       background-color:  #153462;
+    }
 `
