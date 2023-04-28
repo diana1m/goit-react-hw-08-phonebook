@@ -8,24 +8,31 @@ import { NavLink } from "react-router-dom";
 // `
 
 export const NavLinkStyled = styled(NavLink)`
+cursor: pointer;
     text-decoration: none;
-    color: azure;
-    font-size: 36px;
+    color: #FBFCFB;
+    font-size: 26px;
     font-weight: 700;
-    padding: 6px 12px;
+    padding: 3px 15px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    box-sizing: border-box;
     text-transform: uppercase;
-    transition-property: color, background-color;
+    transition-property: background-color, border-color;
     transition-duration: 0.2s;
     transition-timing-function: linear;
     &:hover,
     &:focus {
-        color: white;
+        border-color:  #AED7FC;
     }
     &.active {
-        color: white;
-        background-color: #BAD1C2;
-        
-        border-radius: 4px;
+        background-color:  #AED7FC;
         pointer-events: none;
     }
-`;
+`
+
+export const NavigationWrapper = styled.nav`
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+`

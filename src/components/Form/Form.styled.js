@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Form as FormikForm, ErrorMessage, Field } from 'formik';
 
 export const Form = styled(FormikForm)`
-    width: 710px;
+    max-width: 710px;
     padding: 40px;
     margin-bottom: 30px;
     border: 1px solid #000000;
@@ -12,6 +12,7 @@ export const Form = styled(FormikForm)`
     flex-direction: column;
     gap: 16px;
     margin: 0 auto;
+    margin-top: 40px;
 `;
 
 export const InputStyled = styled(Field)`

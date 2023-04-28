@@ -1,37 +1,36 @@
+import { Form, InputStyled, Button } from 'components/Form/Form.styled';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
+import { Formik } from 'formik';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.currentTarget;
+  const handleSubmit = (values, actions) => {
     dispatch(
       register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
+        name: values.name,
+        email: values.email,
+        password: values.password,
       })
     );
-    form.reset();
+    actions.resetForm();
   };
 
   return (
-    <form  onSubmit={handleSubmit} autoComplete="off">
-      <label >
-        Username
-        <input type="text" name="name" />
-      </label>
-      <label >
-        Email
-        <input type="email" name="email" />
-      </label>
-      <label >
-        Password
-        <input type="password" name="password" />
-      </label>
-      <button type="submit">Register</button>
-    </form>
+    <Formik 
+      onSubmit={handleSubmit} 
+      initialValues={{ name: '', email: '', password: '' }}
+      >
+      <Form   autoComplete="off">
+        <label htmlFor="name">Username</label>
+        <InputStyled type="text" name="name" />
+        <label htmlFor="email">Email</label>
+        <InputStyled type="email" name="email" />
+        <label htmlFor="password">Password</label>
+        <InputStyled type="password" name="password" />
+        <Button type="submit">Register</Button>
+      </Form>
+    </Formik> 
   );
 };

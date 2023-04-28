@@ -2,7 +2,7 @@ export default function Home() {
     return (
       <div >
         <h1 >
-          Phonebook welcome page{' '}
+          PhoneBook welcome page
 
         </h1>
       </div>

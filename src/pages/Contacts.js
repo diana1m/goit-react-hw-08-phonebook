@@ -20,16 +20,14 @@ export default function Tasks() {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Your contacts</title>
-        </Helmet>
+        </Helmet> */}
         {isLoading && <Loader/>}
       <ContactsForm/>
       <h2>Contacts</h2>
       <Filter/>
       <ContactsList/>
-
-      
     </>
   );
 }
