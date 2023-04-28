@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[266],{1266:function(e,t,r){r.r(t),r.d(t,{default:function(){return n}});var o=r(184);function n(){return(0,o.jsx)("div",{children:(0,o.jsx)("h1",{children:"Hello, this is your PhoneBook. It is designed to help your brain not remember numbers, but write them down. Create your own unique account and get the opportunity to record your contacts."})})}}}]);
+//# sourceMappingURL=266.ec4b8229.chunk.js.map
