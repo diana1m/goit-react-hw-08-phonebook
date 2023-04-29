@@ -3,23 +3,25 @@ import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import toast from 'react-hot-toast';
-import { useAuth } from 'hooks';
 
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
-  const { error } = useAuth();
 
   const handleSubmit = (values, actions) => {
-    if (error) {
-      toast.error(`login error`);
-    }
     dispatch(
       logIn({
         email: values.email,
         password: values.password,
-      })
-    );
+      }))
+    .unwrap()
+    .then(() => {
+      // handle result here
+    })
+    .catch(() => {
+      toast.error(`login error`);
+    });
+    
     actions.resetForm()
   };
 
