@@ -27,6 +27,7 @@ cursor: pointer;
     }
     &.active {
         background-color:  #AED7FC;
+        color: #171717;
         pointer-events: none;
     }
 `
@@ -35,4 +36,5 @@ export const NavigationWrapper = styled.nav`
     display: flex;
     justify-content: center;
     gap: 30px;
+
 `

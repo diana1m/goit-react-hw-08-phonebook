@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 30px;
     color: #FBFCFB;
-    margin-left: auto;
 `
 export const Text = styled.p`
     color: #FBFCFB;
@@ -14,16 +12,16 @@ export const Text = styled.p`
 `
 
 export const Button = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-
-    /* padding: 3px 15px; */
-
-    background-color: #AED7FC;
-    border-radius: 12px;
+    color: #FBFCFB;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
     border: none;
-    /* color: #ECECEC; */
     cursor: pointer;
+    transition: scale 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover,
+    &:focus{
+        scale: 1.2;
+    }
 `

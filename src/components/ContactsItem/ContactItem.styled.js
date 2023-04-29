@@ -4,7 +4,7 @@ export const Item = styled.li`
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 500px;
+    max-width: 610px;
     justify-content: space-between;
 `
 
@@ -25,12 +25,8 @@ export const Number = styled.span`
 
 export const BtnDelete = styled.button`
     display: block;
-    
-    /* width: 80px;
-    height: 30px; */
-
     margin-left: 40px;
-    /* margin-right: auto; */
+
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -41,4 +37,11 @@ export const BtnDelete = styled.button`
     background-color: transparent;
 
     cursor: pointer;
+
+    transition: scale 300ms ease;
+
+    &:hover{
+        text-decoration: none;
+        scale: 1.2;
+    }
 `

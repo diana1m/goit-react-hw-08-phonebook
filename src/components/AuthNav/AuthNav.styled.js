@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-// export const Navigation = styled.nav`
-//     display: flex;
-//     justify-content: center;
-//     gap: 20px;
-// `
-
 export const NavLinkStyled = styled(NavLink)`
     cursor: pointer;
     text-decoration: none;
@@ -27,6 +21,7 @@ export const NavLinkStyled = styled(NavLink)`
     }
     &.active {
         background-color:  #AED7FC;
+        color: #171717;
         pointer-events: none;
     }
 `
@@ -36,6 +31,5 @@ export const Wrapper = styled.div`
     justify-content: center;
     gap: 30px;
     color: #FBFCFB;
-    margin-left: auto;
 `
 

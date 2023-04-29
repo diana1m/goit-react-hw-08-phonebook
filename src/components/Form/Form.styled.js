@@ -42,7 +42,7 @@ export const Button = styled.button`
     padding: 16px 80px;
     gap: 10px;
 
-    width: 313px;
+    max-width: 313px;
     height: 61px;
 
     background-color: #383886;

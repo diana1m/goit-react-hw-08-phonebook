@@ -13,7 +13,7 @@ export const FilterWrapper = styled.div`
 `
 
 export const InputFilter = styled.input`
-     height: 60px;
+    height: 60px;
     background-color: #ECECEC;
     border-radius: 12px;
     border: none;
